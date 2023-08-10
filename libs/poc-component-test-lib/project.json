@@ -29,6 +29,15 @@
           "libs/poc-component-test-lib/**/*.html"
         ]
       }
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/poc-component-test-lib/cypress.config.ts",
+        "testingType": "component",
+        "skipServe": true,
+        "devServerTarget": "poc-component-test-app:build:development"
+      }
     }
   }
 }

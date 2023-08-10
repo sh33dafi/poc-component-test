@@ -1,0 +1,7 @@
+{
+"exclude": [
+    "**cypress**"
+  ],
+  "report-dir": "../../coverage/cypress/poc-component-test-lib",
+  "cwd": "../../"
+}
